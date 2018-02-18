@@ -1,0 +1,8 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+  "get_started": {"payload": "comecar"}
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAaM2214NlkBAG2vLI8woZA4UfW8BQbZArpxe845AzzvK57bWw5VKYWS9gMISFDw4ZC93LX8qSZA7A1df8bsoMJwlvIxOYHKJ63IAWnZCtVMr7kvE33PlHGgMldDf0zmzqsZC5qEe7Q8UMBAiEQ5bw20gtw21lERNDZBBVaWOft9TMmQK7I6ZB4I"
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "greeting": [{ "locale":"default", "text":"Bem vindo ao Chat Bot de BSS! Posso lhe ajudar a resolver eventuais problemas em seus serviços Vivo Fixo.!" }]
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAaM2214NlkBAG2vLI8woZA4UfW8BQbZArpxe845AzzvK57bWw5VKYWS9gMISFDw4ZC93LX8qSZA7A1df8bsoMJwlvIxOYHKJ63IAWnZCtVMr7kvE33PlHGgMldDf0zmzqsZC5qEe7Q8UMBAiEQ5bw20gtw21lERNDZBBVaWOft9TMmQK7I6ZB4I"
