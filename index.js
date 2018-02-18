@@ -6,7 +6,7 @@ const app = express();
 
 const verificationController = require('./controllers/verification');
 const messageWebhookController = require('./controllers/messageWebhook');
-const imageSearchController = require('./controllers/imageSearch');
+//const imageSearchController = require('./controllers/imageSearch');
 
 app.use(express.static(path.resolve(__dirname, 'client')));
 app.use(bodyParser.json());
@@ -16,4 +16,4 @@ app.listen(5000, () => console.log('Webhook server is listening at port 5000'));
 
 app.get('/', verificationController);
 app.post('/', messageWebhookController);
-app.post('/image-search', imageSearchController);
+//app.post('/image-search', imageSearchController);
