@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.listen(5000, () => console.log('Webhook server is listening at port 5000'));
+console.log('v0.1');
 
 app.get('/', verificationController);
 app.post('/', messageWebhookController);
