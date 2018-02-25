@@ -12,8 +12,8 @@ app.use(express.static(path.resolve(__dirname, 'client')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.listen(8443, () => console.log('Webhook server is listening at port 5000'));
-console.log('v0.2');
+app.listen(8080, () => console.log('Webhook server is listening at port 5000'));
+console.log('v0.3');
 
 app.get('/', verificationController);
 app.post('/', messageWebhookController);
